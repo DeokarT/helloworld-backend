@@ -1,4 +1,4 @@
 FROM nginx:latest
-ADD app.jar
+ADD /var/www/backend/app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"] 
+ENTRYPOINT ["java", "-jar", "/var/www/backend/app.jar"] 
